@@ -31,9 +31,19 @@ public class ActivityOne extends Activity {
 	// You will need to increment these variables' values when their
 	// corresponding lifecycle methods get called.
 
+	private int mCreate = 0;
+	private int mRestart = 0;
+	private int mStart = 0;
+	private int mResume = 0;
+
 	// TODO: Create variables for each of the TextViews
 	// named mTvCreate, mTvRestart, mTvStart, mTvResume.
 	// for displaying the current count of each counter variable
+
+	TextView mTvCreate;
+	TextView mTvRestart;
+	TextView mTvStart;
+	TextView mTvResume;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +53,11 @@ public class ActivityOne extends Activity {
 		// TODO: Assign the appropriate TextViews to the TextView variables
 		// Hint: Access the TextView by calling Activity's findViewById()
 		// textView1 = (TextView) findViewById(R.id.textView1);
+
+		mTvCreate = (TextView) findViewById(R.id.create);
+		mTvRestart = (TextView) findViewById(R.id.restart);
+		mTvStart = (TextView) findViewById(R.id.start);
+		mTvResume = (TextView) findViewById(R.id.resume);
 
 		Button launchActivityTwoButton = (Button) findViewById(R.id.bLaunchActivityTwo);
 		launchActivityTwoButton.setOnClickListener(new OnClickListener() {
