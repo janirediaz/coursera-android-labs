@@ -29,7 +29,7 @@ public class MainActivity extends Activity implements
 			FragmentTransaction transaction = getFragmentManager().beginTransaction();
 			transaction.add(R.id.fragment_container, mFriendsFragment);
 			transaction.commit();
-			
+
 		} else {
 
 			// Otherwise, save a reference to the FeedFragment for later use
