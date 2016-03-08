@@ -109,6 +109,16 @@ public class ActivityLoaderActivity extends Activity {
 		// RESULT_OK result code and a recognized request code
 		// If so, update the Textview showing the user-entered text.
 
+		if(requestCode==GET_TEXT_REQUEST_CODE){
+			
+			if(resultCode==RESULT_OK){
+				mUserTextView.setText(data.getStringExtra("result"));
+			}
+			if(resultCode==RESULT_CANCELED){
+				Log.i(TAG, "Error retrieving result from activity");
+			}
+		}
+
 	
     
     
