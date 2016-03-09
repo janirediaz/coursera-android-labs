@@ -21,6 +21,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="http"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
   
             <!-- TODO - Add necessary intent filter information so that this
                     Activity will accept Intents with the

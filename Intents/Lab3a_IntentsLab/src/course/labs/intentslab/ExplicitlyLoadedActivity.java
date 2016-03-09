@@ -53,6 +53,14 @@ public class ExplicitlyLoadedActivity extends Activity {
 		// TODO - Set Activity's result with result code RESULT_OK
 		
 		// TODO - Finish the Activity
+		String returnText = mEditText.getText().toString();
+
+		Intent returnIntent = new Intent();
+		returnIntent.putExtra("result", returnIntent);
+
+		setResult(RESULT_OK, returnIntent);
+
+		finish();
 
 	}
 }
